@@ -48,13 +48,13 @@ To install FANPUB:
 
 ### 1. Installation
 
-Open a terminal in your desired install path and clone the repository (this will download the script).
+CD to your desired path, then clone the repo:
 
 ```shell
 $ git clone https://github.com/emecampuzano/fanpub
 ```
 
-Then install all the requirements to run. 
+Install all requirements:
 
 ```shell
 $ pip install requirements.txt 

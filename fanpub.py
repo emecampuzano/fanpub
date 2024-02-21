@@ -13,7 +13,7 @@ def main(story_link):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Your description here')
+    parser = argparse.ArgumentParser(description='Fanpub: A Wattpad story downloader.')
     parser.add_argument('story_link', type=str, help='The wattpad story link')
     args = parser.parse_args()
     main(args.story_link)
