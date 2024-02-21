@@ -1,3 +1,5 @@
+WHAT
+
 <div align="center">
 
 # **FANPUB**
@@ -46,18 +48,27 @@ To install FANPUB:
 
 ### 1. Installation
 
+Open a terminal in your desired install path and clone the repository (this will download the script).
+
 ```shell
-$ git clone <link> 
+$ git clone https://github.com/emecampuzano/fanpub
 ```
+
+Then install all the requirements to run. 
 
 ```shell
 $ pip install requirements.txt 
 ```
 
+Don't worry about setting up an output location, the wizard will do it for you the first time you run the tool. 
+
 ### 2. Downloading a book
+
+In the install path, run the following command on your terminal:
 
 ```shell
 $ python fanpub link-to-your-story
 ```
 
 ## 3. Read! 
+
