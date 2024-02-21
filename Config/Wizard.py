@@ -1,4 +1,4 @@
-import os 
+import os
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import json
@@ -15,12 +15,14 @@ class Wizard:
         root.withdraw()
 
         # Request user to select output folder
-        messagebox.showinfo('Information', 'Select the output folder for the EPUB books.')
+        messagebox.showinfo(
+            'Information', 'Select the output folder for the EPUB books.')
 
         # Select output folder
         output_folder = filedialog.askdirectory()
         if not output_folder:
-            messagebox.showinfo('Information', 'No folder selected. Exiting...')
+            messagebox.showinfo(
+                'Information', 'No folder selected. Exiting...')
             exit()
 
         with open(self.configFile, 'r') as file:
@@ -30,7 +32,6 @@ class Wizard:
 
         with open(self.configFile, 'w') as file:
             json.dump(config, file, indent=4)
-
 
         # Check if folders EPUB and Temp exist, if not, create them
         folders = ['EPUB', 'Temp', 'Temp/Content', 'Temp/Media']
@@ -49,6 +50,6 @@ class Wizard:
             output = config['output']
 
         if not os.path.exists(output):
-            print('Configuration error: Output directory does not exist. Running setup wizard...')
+            print(
+                'Configuration error: Output directory does not exist. Running setup wizard...')
             self.setup_wizard()
-            
